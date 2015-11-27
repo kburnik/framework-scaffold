@@ -1,0 +1,166 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding-top:50px;
+  font-family: "Frutiger Neue W02 Book",Arial,Helvetica,sans-serif;
+  p {
+    font-size:1.2em;
+  }
+}
+
+.center {
+  text-align:center;
+}
+
+.right {
+  text-align:right;
+}
+
+.padding {
+  padding:1em;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+@header-color:#00AEC4;
+@red-color:#EB3D00;
+
+.red {
+  color:@red-color;
+}
+
+a.red:hover {
+  color:#c12900;
+}
+
+header {
+
+  h1 {
+    font-family:'Source Sans Pro';
+    font-weight:200;
+    font-size:7.6em;
+    margin:0px;
+    padding-bottom:0em;
+    margin-bottom:0em;
+  }
+
+  h3 {
+    margin-top:0em;
+    font-size:1.74em;
+  }
+}
+
+.center-element {
+  position:absolute;
+  z-index:100000;
+  top: 50%;
+  left: 50%;
+  margin-left:-50px;
+  margin-top:-100px;
+  width:100px;
+  height:100px;
+}
+
+.fa-large {
+  font-size: 8em;
+}
+
+.modal-backdrop.in {
+  opacity: .25;
+}
+
+.label-concept {
+  font-size: 1em;
+  margin:0.2em;
+  display:inline-block;
+}
+
+@footer-height:150px;
+
+#wrap {
+  min-height:100%;
+  z-index:100;
+}
+
+.push-bottom {
+  margin-bottom: @footer-height;
+}
+
+footer {
+  padding-top:2em;
+  padding-bottom:2em;
+  background-color: #333;
+  color:white;
+  margin-top: -@footer-height;
+  height: @footer-height;
+}
+
+
+.label-concept a, .label-language a {
+  color: white;
+  cursor: pointer;
+}
+
+
+div[code-editor] {
+  height: 500px;
+  font-size: 1.2em;
+}
+
+
+/* the element will fade out before it is removed from the DOM */
+.animate-fade {
+
+ .ng-enter {
+    transition:0.2s linear all;
+    opacity:0;
+
+    .ng-enter-active {
+      opacity:1;
+    }
+  }
+
+  .ng-leave {
+    transition:0.2s linear all;
+    opacity:1;
+
+    .ng-leave-active {
+      opacity:0;
+    }
+  }
+
+  .ng-hide {
+    transition:0.2s linear all;
+    opacity:0;
+  }
+}
+
+hint {
+ color:#ccc;
+ font-size:0.8em;
+ vertical-align: middle;
+ display:inline;
+}
+
+.fit-content
+{
+    width: 1px;
+    white-space: nowrap;
+}
+
+
+i.danger {
+  color:red;
+}
+
+i.default {
+  color:gray;
+}

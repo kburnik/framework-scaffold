@@ -1,0 +1,148 @@
+{
+  "required":{
+
+    "jQuery":{
+      "css":[],
+      "js":[
+        "//code.jquery.com/jquery-1.11.1.min.js",
+        "/third_party/node_modules/jquery.browser/dist/jquery.browser.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+      ]
+    },
+
+    "minilog":{
+      "css":[],
+      "js":[
+        "/third_party/node_modules/minilog/dist/minilog.js",
+        "/js/minilog.impl.js"
+      ]
+    },
+
+    "Bootstrap":{
+      "css":[
+        "//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css",
+        "//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css"
+      ],
+      "js":[
+        "//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"
+      ]
+    },
+
+    "FontAwesome":{
+      "css":[
+       "//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css"
+      ],
+      "js":[]
+    },
+
+    "Fonts":{
+      "css":[
+        "//fonts.googleapis.com/css?family=Open+Sans",
+        "//fonts.googleapis.com/css?family=Tangerine&amp;subset=all",
+        "//fonts.googleapis.com/css?family=Lato:400,700,900",
+        "//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700",
+        "//fast.fonts.net/cssapi/7492f661-79f4-4ab2-90f2-6a9eaf984a75.css"
+      ],
+      "js":[]
+    },
+
+    "FancyBox":{
+      "css":[
+        "/third_party/fancyBox/source/jquery.fancybox.css"
+      ],
+      "js":[
+        "/third_party/fancyBox/source/jquery.fancybox.pack.js",
+        "/js/fancybox.impl.js"
+      ]
+    },
+
+    "Angular": {
+      "css":[],
+      "js":[
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js",
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js",
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js",
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js",
+        "/js/polyfill.js"
+      ]
+    },
+
+    "Angular-UI-Bootstrap": {
+      "css": [],
+      "js": [
+        "/third_party/node_modules/angular-ui-bootstrap/ui-bootstrap.min.js",
+        "/third_party/node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"
+      ]
+    },
+
+    "Angular-UI": {
+      "css": [],
+      "js": [
+        "//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"
+      ]
+    },
+
+    "Angular-File-Upload": {
+      "css": [],
+      "js": [
+        "/third_party/node_modules/angular-file-upload/dist/angular-file-upload.min.js"
+      ]
+    },
+
+    "Ace-Code-Editor": {
+      "css": [],
+      "js": [
+        "/third_party/ace-code-editor/src-min-noconflict/ace.js"
+      ]
+    },
+
+    "Mousetrap": {
+      "css":[],
+      "js":[
+        "/third_party/mousetrap/mousetrap.min.js",
+        "/third_party/mousetrap/plugins/global-bind/mousetrap-global-bind.min.js"
+      ]
+    },
+
+    "Ng-App": {
+      "css": [],
+      "js": [
+        "/ngapp/app.ng-app.js",
+        "/third_party/framework-ngapp/api.js",
+        "/ngapp/controller/file-upload.ng-controller.js",
+        "/ngapp/controller/loading.ng-controller.js",
+        "/ngapp/controller/main.ng-controller.js",
+        "/ngapp/controller/navigation.ng-controller.js",
+        "/ngapp/decorator/angular-file-upload-drag-leave.ng-decorator.js",
+        "/ngapp/directive/code-editor.ng-directive.js",
+        "/ngapp/directive/confirm-action.ng-directive.js",
+        "/ngapp/directive/enter-pressed.ng-directive.js",
+        "/ngapp/directive/file-upload-single.ng-directive.js",
+        "/ngapp/directive/keyboard-shortcut.ng-directive.js",
+        "/ngapp/directive/prevent-default.ng-directive.js",
+        "/ngapp/directive/string-to-number.ng-directive.js",
+        "/ngapp/filter/escape.ng-filter.js",
+        "/ngapp/filter/sum.ng-filter.js",
+        "/ngapp/service/ace.ng-service.js",
+        "/ngapp/service/concept.ng-service.js",
+        "/ngapp/service/dialog-modal.ng-service.js",
+        "/ngapp/service/mousetrap.ng-service.js",
+        "/ngapp/service/user.ng-service.js"
+      ]
+    },
+
+    "Template":{
+      "less":[
+        "/css/template.less",
+        "/css/panel-tabs.less",
+        "/css/scroll-shortcut.less",
+        "/css/file-upload.less"
+      ],
+      "js":[
+        "/third_party/less.js/dist/less.min.js",
+        "/js/main.js"
+      ]
+    }
+  }
+}

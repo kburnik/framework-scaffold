@@ -1,0 +1,8 @@
+RewriteEngine On
+DirectoryIndex index.php
+FallbackResource /api/index.php
+
+php_value upload_max_filesize 1000M
+php_value post_max_size 1000M
+php_value max_input_time 3000
+php_value max_execution_time 3000

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "framework",
+    "url": "https://github.com/kburnik/framework.git",
+    "branch" : "php5",
+    "root_dir": "third_party"
+  },
+  {
+    "name": "toolbox",
+    "url": "https://github.com/kburnik/framework-toolbox.git",
+    "branch" : "master",
+    "root_dir": "third_party"
+  },
+  {
+    "name": "PHPMailer",
+    "url": "https://github.com/PHPMailer/PHPMailer.git",
+    "branch" : "master",
+    "root_dir": "third_party"
+  },
+  {
+    "name": "framework-ngapp",
+    "url": "https://github.com/kburnik/framework-ngapp.git",
+    "branch" : "master",
+    "root_dir": "public_html/third_party"
+  },
+  {
+    "name": "fancyBox",
+    "url": "https://github.com/kburnik/fancyBox.git",
+    "branch": "master",
+    "root_dir": "public_html/third_party"
+  },
+  {
+    "name": "less.js",
+    "url": "https://github.com/less/less.js.git",
+    "branch": "master",
+    "root_dir": "public_html/third_party"
+  },
+  {
+    "name": "mousetrap",
+    "url": "https://github.com/kburnik/mousetrap.git",
+    "branch": "master",
+    "root_dir": "public_html/third_party"
+  }
+]
