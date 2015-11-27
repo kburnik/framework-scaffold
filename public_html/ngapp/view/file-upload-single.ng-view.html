@@ -1,0 +1,11 @@
+<div>
+  <div nv-file-drop="" uploader="uploader">
+    <div nv-file-over="" uploader="uploader" class="file-drop" over-class="file-drop-over">
+      <div ng-transclude>
+      </div>
+    </div>
+  </div>
+  <div class="progress" ng-show="uploader.progress && uploader.progress != 100">
+    <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+  </div>
+</div>

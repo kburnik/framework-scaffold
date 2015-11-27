@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en' data-ng-app="[@PROJECT_NAME]">
+  <head>
+    <meta charset='utf-8'>
+    <title>[title]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='[@PROJECT_DESCRIPTION]'>
+    <meta name='author' content='[@PROJECT_AUTHOR]'>
+
+    <!-- CSS -->
+    [@!css]
+    <!-- /CSS -->
+  </head>
+  <body>
+    <!-- GOOGLE-ANALYTICS -->
+    $?([@ENV]=='prod'){[google_analytics]}{<!-- NO analytics: ENV = [@ENV] -->}
+    <!-- /GOOGLE-ANALYTICS -->
+    <div id="wrap">
+
+      <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><i class="fa fa-puzzle-piece fa-align-left"></i></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul ng-include="'/ngapp/view/navigation.ng-view.html'" class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right" style="padding-right:1em;z-index:100000">
+          $?([loggedIn]) {
+            <li class="dropdown">
+              <a href=""
+                 class="dropdown-toggle"
+                 data-toggle="dropdown"
+                 role="button"
+                 aria-haspopup="true"
+                 aria-expanded="false">
+                [user.name] [user.surname]
+                <i class="fa fa-user"></i>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/logout/"><i class="fa fa-lock"></i> Log out</a></li>
+              </ul>
+            </li>
+          }{
+            <li>
+              <a href="/login/"><i class="fa fa-key"></i> Log in</a>
+            </li>
+          }
+          </ul>
+        </div><!--/.nav-collapse -->
+      </nav>
+
+      <div class="container" id="main">
+      [main]
+      </div>
+
+    </div>
+
+      <!-- Back to top -->
+      <a href="#"
+        class="scroll-shortcut back-to-top"
+        ><i class="fa fa-arrow-up fa-lg"></i></a>
+
+    <footer>
+      <div class="intro black">
+        <div class="container">
+          <div class="center">
+            <a href="#company"
+               style='color:white;'
+               target="_blank">@COMPANY</a>
+               - @COPYRIGHT.
+            <br><br>
+
+            <small>Developed by:
+            <a href="http://bit.ly/kristijan-burnik-linkedin"
+               target="_blank">Kristijan Burnik</a></small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- JAVASCRIPT -->
+  [@!javascript]
+  <!-- /JAVASCRIPT -->
+  </body>
+</html>

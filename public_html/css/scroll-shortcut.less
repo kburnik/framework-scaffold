@@ -1,0 +1,38 @@
+.scroll-shortcut {
+  cursor: pointer;
+  font-size: 15px;
+  position: fixed;
+  text-decoration: none;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  bottom: -25px;
+  border-bottom: none;
+  color: #eee;
+  padding: 15px;
+  padding-bottom: 30px;
+  display: none;
+  transition-property: padding-bottom,background;
+  transition-duration: .2s;
+  -webkit-transition-property: padding-bottom,background;
+  -webkit-transition-duration: .2s;
+  background: rgba(0,0,0,.3);
+  z-index:10000;
+}
+
+.scroll-shortcut:hover {
+  padding-bottom: 50px;
+  color: #fff;
+  background: rgba(0,0,0,.6)
+}
+
+.scroll-shortcut:focus {
+  color: #fff
+}
+
+.scroll-shortcut.back-to-top {
+  right: 30px
+}
+
+.scroll-shortcut.back-to-search {
+  left: 30px
+}

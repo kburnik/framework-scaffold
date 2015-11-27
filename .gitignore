@@ -1,0 +1,23 @@
+third_party/*
+*.sublime-*
+*error_log
+(public_html)
+temp
+public_html/robots.txt
+
+.tags*
+public_html/css/*.min.css
+gen/cache
+migration/*/.migrated
+tools
+public_html/third_party/framework-ngapp
+public_html/third_party/ace-code-editor
+public_html/third_party/node_modules/
+public_html/third_party/mousetrap
+public_html/robots.txt
+
+logs/access.log logs/error.log
+logs
+gen/pdf/
+public_html/zatemas.api.log.txt
+data
