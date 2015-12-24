@@ -14,7 +14,7 @@ include_once(constant('PATH_TO_FRAMEWORK') . '/base/Base.php');
 $mysql = new MySQLProvider('localhost',
                            constant('PROJECT_MYSQL_USERNAME'),
                            constant('PROJECT_MYSQL_PASSWORD'),
-                           constant('PROJECT_MYSQL_DATABASE');
+                           constant('PROJECT_MYSQL_DATABASE'));
 
 $project = Project::Create(constant('PROJECT_NAME'),
                            constant('PROJECT_TITLE'),
@@ -30,3 +30,5 @@ $mysql->connect();
 SurogateDataDriver::SetRealDataDriver(new MySQLDataDriver());
 
 include_once(dirname(__FILE__) . '/functions.php');
+include_once(dirname(__FILE__) . '/compat_pbkdf2.php');
+include_once(dirname(__FILE__) . '/hash_equals.php');

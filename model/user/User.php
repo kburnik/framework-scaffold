@@ -2,35 +2,50 @@
 
 class User extends Entity {
 
-  public
+public
       /** Integer(4) Unsigned() PrimaryKey() **/
-      $id,
-
+      $id
+    ,
+      /** VarChar(32) **/
+      $username
+    ,
       /** VarChar(64) **/
-      $username,
-
+      $password
+    ,
+      /** VarChar(32) **/
+      $name
+    ,
+      /** VarChar(32) **/
+      $surname
+    ,
+      /** VarChar(128) **/
+      $email
+    ,
+      /** DateTime() **/
+      $regdate
+    ,
+      /** DateTime() **/
+      $lastactive
+    ,
+      /** Integer(1) **/
+      $confirmed
+    ,
+      /** Integer(1) **/
+      $approved
+    ,
+      /** Integer(1) **/
+      $admin
+    ,
       /** VarChar(64) **/
-      $name,
-
-      /** VarChar(64) **/
-      $surname,
-
-      /** VarChar(64) **/
-      $email,
-
-      /** Integer(1) Unsigned() **/
-      $zatemas_admin,
-
-      /** Integer(1) Unsigned() **/
-      $zatemas_contest_admin;
+      $salt
+    ,
+      /** Integer(4) **/
+      $iterations
+  ;
 
   // Whether user can access all data.
   public function isSuperUser() {
-    return $this->zatemas_admin && $this->zatemas_contest_admin;
-  }
-
-  public function isContestAdmin() {
-      return $this->zatemas_contest_admin == 1;
+    return $this->admin;
   }
 
   public function toArraySafe() {
