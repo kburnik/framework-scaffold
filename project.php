@@ -1,19 +1,18 @@
 <?php
 
-include_once(dirname(__FILE__) . "/project-settings.php");
-include_once(constant("PATH_TO_FRAMEWORK") . "/base/Base.php");
+include_once(dirname(__FILE__) . '/project-settings.php');
+include_once(constant('PATH_TO_FRAMEWORK') . '/base/Base.php');
 
-$mysql = new MySQLProvider("localhost",
-                           PROJECT_MYSQL_USERNAME,
-                           PROJECT_MYSQL_PASSWORD,
-                           PROJECT_MYSQL_DATABASE);
+$mysql = new MySQLProvider('localhost',
+                           constant('PROJECT_MYSQL_USERNAME'),
+                           constant('PROJECT_MYSQL_PASSWORD'),
+                           constant('PROJECT_MYSQL_DATABASE');
 
-// create the project
-$project = Project::Create(constant("PROJECT_NAME"),        // name
-                           constant("PROJECT_TITLE"),       // title
-                           constant("PROJECT_AUTHOR"),      // author
-                           constant("PROJECT_DIR"),         // root
-                           constant("PROJECT_TIMEZONE"));   // timezone
+$project = Project::Create(constant('PROJECT_NAME'),
+                           constant('PROJECT_TITLE'),
+                           constant('PROJECT_AUTHOR'),
+                           constant('PROJECT_DIR'),
+                           constant('PROJECT_TIMEZONE'));
 
 $application = Application::getInstance();
 $project->setQueriedDataProvider($mysql);
@@ -22,4 +21,4 @@ $mysql->connect();
 
 SurogateDataDriver::SetRealDataDriver(new MySQLDataDriver());
 
-include_once(dirname(__FILE__) . "/functions.php");
+include_once(dirname(__FILE__) . '/functions.php');
