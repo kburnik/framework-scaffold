@@ -9,10 +9,7 @@ public_html/robots.txt
 public_html/css/*.min.css
 migration/*/.migrated
 tools
-public_html/third_party/framework-ngapp
-public_html/third_party/ace-code-editor
-public_html/third_party/node_modules/
-public_html/third_party/mousetrap
+public_html/third_party/*
 public_html/robots.txt
 
 logs/access.log logs/error.log
