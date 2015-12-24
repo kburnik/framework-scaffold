@@ -10,5 +10,19 @@ This is a minimal project configuration for scaffolding.
 ./third_party/toolbox/sync.sh
 
 . ./third_party/toolbox/env.sh
+
+# Adjust config in project-settings.php
+
+# Create the virtual host and DNS entry
+install-win-xampp.sh
+
+# Create a database
+
+# Create initial migration.
+migrate.sh
+
+# Register a user
+./model/user/register.php
+
 ```
 
