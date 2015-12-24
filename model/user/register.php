@@ -4,7 +4,6 @@
 include_once(dirname(__FILE__) . "/../../project.php");
 
 function register_cli($command, $args, $cli, $userModel) {
-
   $registrationData = array();
   $registrationData['name'] = $cli->input("First name: ");
   $registrationData['surname'] = $cli->input("Last name: ");
@@ -21,6 +20,6 @@ function register_cli($command, $args, $cli, $userModel) {
 }
 
 if (realpath($argv[0]) === __FILE__) {
-  $userModel = UserModel::GetInstance();
+  $userModel = UserModel::getInstance();
   ShellClient::create($argv, $userModel)->start('register_cli');
 }

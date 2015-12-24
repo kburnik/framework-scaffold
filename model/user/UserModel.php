@@ -20,11 +20,11 @@ class UserModel extends EntityModel {
   public function getUserByCredentials($credential, $password) {
     $user = $this->findFirst(array('email' => $credential));
 
-    if ($user == null)
+    if ($user === null)
       $user = $this->findFirst(array('username' => $credential));
 
     // Non existing credential.
-    if ($user == null)
+    if ($user === null)
       return null;
 
     $authOk = $this->isValidPassword($user->toArray(),
