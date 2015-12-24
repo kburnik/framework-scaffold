@@ -21,6 +21,6 @@ function register_cli($command, $args, $cli, $userModel) {
 }
 
 if (realpath($argv[0]) === __FILE__) {
-  $userModel = new UserModel(new InMemoryDataDriver());
+  $userModel = UserModel::GetInstance();
   ShellClient::create($argv, $userModel)->start('register_cli');
 }
