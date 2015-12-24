@@ -18,22 +18,20 @@ class UserModel extends EntityModel {
 
   // The credential can be email or username.
   public function getUserByCredentials($credential, $password) {
-    $userData = $this->findFirst(array('email' => $credential));
+    $user = $this->findFirst(array('email' => $credential));
 
-    if ($userData == null)
-      $userData = $this->findFirst(array('username' => $credential));
+    if ($user == null)
+      $user = $this->findFirst(array('username' => $credential));
 
     // Non existing credential.
-    if (count($userData) == 0)
+    if ($user == null)
       return null;
 
-    $authOk = $this->isValidPassword($userData,
+    $authOk = $this->isValidPassword($user->toArray(),
                                      $password);
 
     if (!$authOk)
       return false;
-
-    $user = new User($userData);
 
     return $user;
   }
@@ -41,10 +39,15 @@ class UserModel extends EntityModel {
   // Register a new user.
   public function register($registrationData,
                            $confirmed = false,
-                           $admin = false) {
+                           $admin = false,
+                           $now = null) {
+
     if (!is_array($registrationData))
       throw new Exception("The registration data must be an array.",
                           self::REG_ERROR_INVALID_INPUT_TYPE);
+
+    if ($now === null)
+      $now = now();
 
     // Filter out required fields.
     $expected_fields = array('username',
@@ -63,7 +66,8 @@ class UserModel extends EntityModel {
             self::REG_ERROR_MISSING_FIELD);
 
       if (empty($registrationData[$field]))
-        throw new Exception("Required field '$field' is empty.", 1);
+        throw new Exception("Required field '$field' is empty.",
+                            self::REG_ERROR_EMPTY_FIELD);
     }
 
     // Check username.
@@ -74,7 +78,7 @@ class UserModel extends EntityModel {
     }
 
     // Check email.
-    $email = trim(strtotlower($registrationData['email']));
+    $email = trim(strtolower($registrationData['email']));
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       throw new Exception('Invalid e-mail provided.',
                           self::REG_ERROR_INVALID_EMAIL);
@@ -111,8 +115,8 @@ class UserModel extends EntityModel {
     }
 
     $crypto_strong = false;
-    $salt = openssl_random_pseudo_bytes(self::CRYPTO_SALT_BYTE_LENGTH,
-                                        $crypto_strong);
+    $salt = bin2hex(openssl_random_pseudo_bytes(self::CRYPTO_SALT_BYTE_LENGTH,
+                                                $crypto_strong));
 
     if ($crypto_strong === false) {
       throw new Exception(
@@ -132,8 +136,8 @@ class UserModel extends EntityModel {
                       'password' => $password_hash,
                       'salt' => $salt,
                       'iterations' => $iterations,
-                      'regdate' => now(),
-                      'lastactive' => now(),
+                      'regdate' => $now,
+                      'lastactive' => $now,
                       'confirmed' => intval($confirmed),
                       'admin' => intval($admin),
                       'approved' => 1);
@@ -148,8 +152,8 @@ class UserModel extends EntityModel {
   }
 
   private function hashPassword($password, $salt, $iterations) {
-    assert(strlen($salt) >= 40, "Salt must be at least 40 chars in length.");
-    assert($iterations >= 10, "Iterations must at least be 10.");
+    if (strlen($salt) < 64 || $iterations < 1000)
+      throw new Exception("Hash error.");
 
     return hash_pbkdf2('sha256', $password, $salt, $iterations,
                        self::CRYPTO_HASH_LENGTH);

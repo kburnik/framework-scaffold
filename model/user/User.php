@@ -9,9 +9,6 @@ public
       /** VarChar(32) **/
       $username
     ,
-      /** VarChar(64) **/
-      $password
-    ,
       /** VarChar(32) **/
       $name
     ,
@@ -41,6 +38,9 @@ public
     ,
       /** Integer(4) **/
       $iterations
+    ,
+      /** VarChar(64) **/
+      $password
   ;
 
   // Whether user can access all data.

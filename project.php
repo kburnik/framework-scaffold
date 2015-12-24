@@ -25,7 +25,9 @@ $project = Project::Create(constant('PROJECT_NAME'),
 $application = Application::getInstance();
 $project->setQueriedDataProvider($mysql);
 $application->Start();
-$mysql->connect();
+
+if (!empty(constant('PROJECT_MYSQL_DATABASE')))
+  $mysql->connect();
 
 SurogateDataDriver::SetRealDataDriver(new MySQLDataDriver());
 
