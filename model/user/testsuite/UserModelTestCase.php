@@ -127,12 +127,12 @@ class UserModelTestCase extends TestCase {
   private function assertRegisterThrows($exceptionCode, $registrationData){
     try {
       $this->userModel->register($registrationData);
-   } catch (Exception $ex) {
-     $this->assertEqual($exceptionCode,
+    } catch (Exception $ex) {
+      $this->assertEqual($exceptionCode,
                         $ex->getCode(),
                         "Invalid exception code thrown.");
-     return;
-   }
+      return;
+    }
 
    $this->assertTrue(false, "Should have thrown exception.");
   }

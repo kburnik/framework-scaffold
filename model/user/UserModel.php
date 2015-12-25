@@ -123,6 +123,7 @@ class UserModel extends EntityModel {
           "Seems like openssl_random_pseudo_bytes is old on this system.",
           self::REG_ERROR_CRYPTO_UNSAFE);
     }
+
     $iterations = self::CRYPTO_ITERATIONS;
 
     $password_hash = $this->hashPassword($registrationData['password'],
