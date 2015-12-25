@@ -9,6 +9,12 @@ This is a minimal project configuration for scaffolding.
 
 ./third_party/toolbox/sync.sh
 
+./sync-npm.sh
+
+# Optional:
+./sync-composer.sh
+
+# Start the environment.
 . ./third_party/toolbox/env.sh
 
 # Adjust config in project-settings.php
@@ -17,7 +23,6 @@ This is a minimal project configuration for scaffolding.
 install-win-xampp.sh
 
 # Init the database.
-# Usage: ./initdb.php [username=myapp] [database=myapp] [mysql-username=root] [mysql-password=] [mysql-host=localhost]
 ./initdb.php
 
 # Create initial migration.

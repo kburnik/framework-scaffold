@@ -8,7 +8,6 @@ destination_dir="$DIR/public_html/third_party"
 
 cd $destination_dir && \
   npm install \
-    minilog \
     angular-ui-bootstrap \
     jquery.browser \
     angular-file-upload
