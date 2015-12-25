@@ -1,5 +1,6 @@
 <?php
-// CREDITS: Ryusuke SEKIYAMA (rsky), https://gist.github.com/rsky/5104756.
+// CREDITS: Ryusuke SEKIYAMA (rsky)
+// https://gist.github.com/rsky/5104756
 
 /**
  * Generate a PBKDF2 key derivation of a supplied password

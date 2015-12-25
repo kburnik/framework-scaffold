@@ -32,5 +32,5 @@ if (!empty(constant('PROJECT_MYSQL_DATABASE')))
 SurogateDataDriver::SetRealDataDriver(new MySQLDataDriver());
 
 include_once(dirname(__FILE__) . '/functions.php');
-include_once(dirname(__FILE__) . '/compat_pbkdf2.php');
-include_once(dirname(__FILE__) . '/hash_equals.php');
+include_once(dirname(__FILE__) . '/compat/compat_pbkdf2.php');
+include_once(dirname(__FILE__) . '/compat/hash_equals.php');
