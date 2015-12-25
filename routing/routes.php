@@ -20,5 +20,4 @@ return array(
     )),
     ($_GET['redirect']) ? $_GET['redirect'] : "/"
    ),
-
 );

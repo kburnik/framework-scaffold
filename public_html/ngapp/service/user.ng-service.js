@@ -9,9 +9,7 @@ app
     getCurrentUserAsync: function() {
       return userApi.getCurrentUser();
     }
-
   };
-
 
   return s;
 })

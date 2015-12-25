@@ -1,5 +1,5 @@
 var app = angular.module(
-    "app" ,
+    "myapp" ,
     ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'ui.bootstrap.typeahead', 'ui',
      'angularFileUpload'],
     function($routeProvider , $locationProvider) {

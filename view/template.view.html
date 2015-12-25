@@ -15,7 +15,7 @@
     $?([@ENV]=='prod'){[google_analytics]}{<!-- NO analytics: ENV = [@ENV] -->}
     <!-- /GOOGLE-ANALYTICS -->
     <div id="wrap">
-      <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -26,7 +26,6 @@
           <a class="navbar-brand" href="/"><i class="fa fa-puzzle-piece fa-align-left"></i> [@PROJECT_TITLE]</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul ng-include="'/ngapp/view/navigation.ng-view.html'" class="nav navbar-nav"></ul>
           <ul class="nav navbar-nav navbar-right" style="padding-right:1em;z-index:100000">
           $?([loggedIn]) {
             <li class="dropdown">

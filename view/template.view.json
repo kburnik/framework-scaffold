@@ -10,14 +10,6 @@
       ]
     },
 
-    "minilog":{
-      "css":[],
-      "js":[
-        "/third_party/node_modules/minilog/dist/minilog.js",
-        "/js/minilog.impl.js"
-      ]
-    },
-
     "Bootstrap":{
       "css":[
         "//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css",
@@ -90,13 +82,6 @@
       ]
     },
 
-    "Ace-Code-Editor": {
-      "css": [],
-      "js": [
-        "/third_party/ace-code-editor/src-min-noconflict/ace.js"
-      ]
-    },
-
     "Mousetrap": {
       "css":[],
       "js":[
@@ -110,12 +95,8 @@
       "js": [
         "/ngapp/app.ng-app.js",
         "/third_party/framework-ngapp/api.js",
-        "/ngapp/controller/file-upload.ng-controller.js",
-        "/ngapp/controller/loading.ng-controller.js",
         "/ngapp/controller/main.ng-controller.js",
-        "/ngapp/controller/navigation.ng-controller.js",
         "/ngapp/decorator/angular-file-upload-drag-leave.ng-decorator.js",
-        "/ngapp/directive/code-editor.ng-directive.js",
         "/ngapp/directive/confirm-action.ng-directive.js",
         "/ngapp/directive/enter-pressed.ng-directive.js",
         "/ngapp/directive/file-upload-single.ng-directive.js",
@@ -124,8 +105,6 @@
         "/ngapp/directive/string-to-number.ng-directive.js",
         "/ngapp/filter/escape.ng-filter.js",
         "/ngapp/filter/sum.ng-filter.js",
-        "/ngapp/service/ace.ng-service.js",
-        "/ngapp/service/concept.ng-service.js",
         "/ngapp/service/dialog-modal.ng-service.js",
         "/ngapp/service/mousetrap.ng-service.js",
         "/ngapp/service/user.ng-service.js"

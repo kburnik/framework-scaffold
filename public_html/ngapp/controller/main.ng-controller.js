@@ -1,6 +1,7 @@
 app
 
-.controller("MainController", function(UserService, $rootScope, $scope, $location) {
+.controller("MainController",
+    function(UserService, $rootScope, $scope, $location) {
 
   $rootScope.user == null
   $rootScope.ready = false;

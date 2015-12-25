@@ -1,1 +1,1 @@
-<?phpclass DefaultViewProviderFactory extends XMLFileViewProviderFactory {	protected function generateFilename( $viewProviderKey ) {		$viewProviderFilename = dirname(__FILE__). '/viewproviders/' . $viewProviderKey . ".xml";		return $viewProviderFilename;	}}
+<?phpclass DefaultViewProviderFactory extends XMLFileViewProviderFactory {	protected function generateFilename( $viewProviderKey ) {		$viewProviderFilename = dirname(__FILE__). '/viewproviders/' .                            $viewProviderKey . ".xml";		return $viewProviderFilename;	}}

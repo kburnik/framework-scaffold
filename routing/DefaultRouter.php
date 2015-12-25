@@ -1,4 +1,4 @@
-<?
+<?php
 
 class DefaultRouter extends WebApplicationRouter {
 
@@ -58,5 +58,4 @@ class DefaultRouter extends WebApplicationRouter {
 
     return $this->CreateViewProvider($viewMap);
   }
-
 }
