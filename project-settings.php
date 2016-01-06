@@ -26,7 +26,7 @@ define('PROJECT_AUTHOR_MAIL', 'johndoe@example.com');
 
 # DB.
 define('PROJECT_MYSQL_USERNAME', 'myapp');
-define('PROJECT_MYSQL_PASSWORD', '0e32241fa64323cc');
+define('PROJECT_MYSQL_PASSWORD', '');
 define('PROJECT_MYSQL_TEST_DATABASE', '');
 
 # ENV.
