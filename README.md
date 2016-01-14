@@ -2,6 +2,10 @@
 
 This is a minimal project configuration for scaffolding.
 
+## Before you start
+
+Make sure to run in git-bash **as ADMINISTRATOR**.
+
 ## Initial setup (for the lazy)
 
 ```
@@ -10,7 +14,7 @@ cd framework-scaffold &&\
 ./dev-setup.sh
 ```
 
-## Initial setup step by step (RUN in git-bash **as ADMINISTRATOR**):
+## Initial setup step by step:
 
 ```
 ./sync-toolbox.sh
