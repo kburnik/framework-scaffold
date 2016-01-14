@@ -32,7 +32,6 @@
   "PDF_OUTPUT_DIR": "gen/pdf",
 
   "ENV": "prod",
-  "PRODUCTION_MODE": true,
   "APP_DOMAIN": "www.myapp.com",
   "APP_DEFAULT_PROTOCOL": "https",
 

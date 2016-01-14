@@ -19,7 +19,7 @@ This is a minimal project configuration for scaffolding.
 . ./third_party/toolbox/env.sh
 
 # Enable development config
-mv project-config.dev.json.ignore project-config.dev.json
+cp project-config.dev.json.ignore project-config.dev.json
 
 # Adjust config in project-config.json and generate
 generate-config.php

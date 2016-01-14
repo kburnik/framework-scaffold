@@ -1,6 +1,5 @@
 {
   "ENV": "canary",
-  "PRODUCTION_MODE": false,
   "APP_DOMAIN": "test.myapp.com",
   "APP_DEFAULT_PROTOCOL": "https"
 }
