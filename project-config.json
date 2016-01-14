@@ -37,7 +37,7 @@
   "APP_DEFAULT_PROTOCOL": "https",
 
   "@merge": [
-    "[PROJECT_DIR]/project-config.dev.json"
+    "[PROJECT_DIR]/project-config.dev.json",
     "[PROJECT_DIR]/project-config.test.json",
     "[PROJECT_DIR]/project-config.prod.json"
   ]
