@@ -21,8 +21,8 @@
     "VIEW_DIR": "[PROJECT_DIR]/view",
 
     "MYSQL": {
-      "DATABASE": "myapp",
-      "USERNAME": "myapp",
+      "DATABASE": "",
+      "USERNAME": "",
       "PASSWORD": "",
       "TEST_DATABASE": ""
     }

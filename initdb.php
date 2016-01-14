@@ -29,7 +29,7 @@ function initdb_cli($command, $args, $cli, $fs) {
   if (empty($mysql_host))
     $mysql_host = "localhost";
 
-  $settings_filename = dirname(__FILE__) . "/project-settings.php";
+  $settings_filename = dirname(__FILE__) . "/project-config.php";
 
   $contents = $fs->file_get_contents($settings_filename);
 
