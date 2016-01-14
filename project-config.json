@@ -1,0 +1,44 @@
+{
+  "PROJECT": {
+    "DIR": "[__DIR__]",
+    "LANGUAGE": "hr",
+    "TIMEZONE": "Europe/Zagreb",
+    "NAME": "myapp",
+    "TITLE": "My App",
+    "DESCRIPTION": "An empty project for scaffolding",
+    "DEVELOPMENT_DOMAIN": "dev.myapp.com",
+    "COMPANY": "Acme",
+    "COMPANY_URL": "https://www.example.com",
+    "COPYRIGHT": "All rights reserved",
+
+    "AUTHOR": {
+      "NAME": "John Doe",
+      "URL": "https://www.example.com",
+      "MAIL": "https://www.example.com"
+    },
+
+    "DATA_DIR": "[PROJECT_DIR]/data",
+    "VIEW_DIR": "[PROJECT_DIR]/view",
+
+    "MYSQL": {
+      "DATABASE": "myapp",
+      "USERNAME": "myapp",
+      "PASSWORD": "",
+      "TEST_DATABASE": ""
+    }
+  },
+
+  "URL_ROOT": "",
+  "PDF_OUTPUT_DIR": "gen/pdf",
+
+  "ENV": "prod",
+  "PRODUCTION_MODE": true,
+  "APP_DOMAIN": "www.myapp.com",
+  "APP_DEFAULT_PROTOCOL": "https",
+
+  "@merge": [
+    "[PROJECT_DIR]/project-config.prod.json",
+    "[PROJECT_DIR]/project-config.test.json",
+    "[PROJECT_DIR]/project-config.dev.json"
+  ]
+}

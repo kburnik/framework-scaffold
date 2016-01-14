@@ -8,8 +8,9 @@ assert_options(ASSERT_CALLBACK, function($script, $line, $message ){
   exit(1);
 });
 
-include_once(dirname(__FILE__) . '/project-settings.php');
+define('PATH_TO_FRAMEWORK', dirname(__FILE__) . "/third_party/framework");
 include_once(constant('PATH_TO_FRAMEWORK') . '/base/Base.php');
+include_once(dirname(__FILE__) . '/project-config.php');
 
 $mysql = new MySQLProvider('localhost',
                            constant('PROJECT_MYSQL_USERNAME'),

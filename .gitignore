@@ -16,3 +16,8 @@ logs/access.log logs/error.log
 logs
 public_html/zatemas.api.log.txt
 data
+
+# Ignore generated config and prod/dev
+project-config.php
+project-config.test.json
+project-config.dev.json

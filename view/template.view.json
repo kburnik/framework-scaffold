@@ -62,8 +62,8 @@
     "Angular-UI-Bootstrap": {
       "css": [],
       "js": [
-        "/third_party/node_modules/angular-ui-bootstrap/ui-bootstrap.min.js",
-        "/third_party/node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"
+        "/third_party/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js",
+        "/third_party/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"
       ]
     },
 

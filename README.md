@@ -11,13 +11,15 @@ This is a minimal project configuration for scaffolding.
 
 ./sync-npm.sh
 
+
 # Optional:
 ./sync-composer.sh
 
 # Start the environment.
 . ./third_party/toolbox/env.sh
 
-# Adjust config in project-settings.php
+# Adjust config in project-config.json and generate
+generate-config.php
 
 # Create the virtual host and DNS entry.
 install-win-xampp.sh
