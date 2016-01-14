@@ -19,7 +19,7 @@ $mysql = new MySQLProvider('localhost',
 
 $project = Project::Create(constant('PROJECT_NAME'),
                            constant('PROJECT_TITLE'),
-                           constant('PROJECT_AUTHOR'),
+                           constant('PROJECT_AUTHOR_NAME'),
                            constant('PROJECT_DIR'),
                            constant('PROJECT_TIMEZONE'));
 
