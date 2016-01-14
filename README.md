@@ -2,7 +2,15 @@
 
 This is a minimal project configuration for scaffolding.
 
-## Initial setup (RUN in git-bash **as ADMINISTRATOR**):
+## Initial setup (for the lazy)
+
+```
+git clone https://github.com/kburnik/framework-scaffold && \
+cd framework-scaffold &&\
+./dev-setup.sh
+```
+
+## Initial setup step by step (RUN in git-bash **as ADMINISTRATOR**):
 
 ```
 ./sync-toolbox.sh
