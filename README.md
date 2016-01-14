@@ -1,8 +1,8 @@
-# Framework-empty-project
+# Framework Scaffold
 
 This is a minimal project configuration for scaffolding.
 
-## Initial setup:
+## Initial setup (RUN in git-bash **as ADMINISTRATOR**):
 
 ```
 ./sync-toolbox.sh
