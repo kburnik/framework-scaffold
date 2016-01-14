@@ -1,0 +1,5 @@
+{
+  "ENV": "prod",
+  "APP_DOMAIN": "www.myapp.com",
+  "APP_DEFAULT_PROTOCOL": "https"
+}

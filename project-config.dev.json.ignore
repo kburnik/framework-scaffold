@@ -1,6 +1,5 @@
 {
   "ENV": "dev",
-  "PRODUCTION_MODE": false,
   "APP_DOMAIN": "dev.myapp.com",
   "APP_DEFAULT_PROTOCOL": "http"
 }
