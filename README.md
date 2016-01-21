@@ -1,3 +1,5 @@
+![Build status](http://vps2.gridwaves.com:8111/app/rest/builds/buildType:(id:FrameworkScaffold_DevelopmentBuild)/statusIcon)
+
 # Framework Scaffold
 
 This is a minimal project configuration for scaffolding.
