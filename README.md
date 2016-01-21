@@ -50,3 +50,7 @@ migrate.sh
 
 ```
 
+## Notes
+
+This project is bulit on a TeamCity Continouous intergration server.
+
