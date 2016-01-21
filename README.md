@@ -1,4 +1,9 @@
-![Build status](http://vps2.gridwaves.com:8111/app/rest/builds/buildType:(id:FrameworkScaffold_DevelopmentBuild)/statusIcon)
+**Build status**
+
+Framework-Scaffold: ![Build status](http://vps2.gridwaves.com:8111/app/rest/builds/buildType:(id:FrameworkScaffold_DevelopmentBuild)/statusIcon)
+
+Framework: ![Build status](http://vps2.gridwaves.com:8111/app/rest/builds/buildType:(id:Framework_DevelopmentBuild)/statusIcon)
+
 
 # Framework Scaffold
 
